@@ -1,0 +1,148 @@
+.node
+{
+    min-width:11.11% !important;
+    max-width:11.11% !important;
+    min-height: 8vh !important;
+    padding-left: 4px !important;
+    overflow: no-display;
+    border: 1.5px solid rgba(0,0,0,.5);
+    align-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    transition: background-color 1s linear;
+}
+.sudoko-board
+{
+    border:3px solid rgba(0,0,0,.5);
+    padding-bottom: 0px !important;
+    margin-bottom: 0 !important;
+
+}
+.heading {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+}
+
+.valid-cell {
+    background-color: #4caf65;
+    transition: background-color 0.25s linear;
+    font-weight: bold;
+    font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+}
+
+.invalid-cell {
+    background-color: #af4e4c;
+    transition: background-color 0.25s linear;
+    font-weight: bold;
+    font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+}
+
+.solved-cell {
+    color: white;
+    background-color: rgba(75, 175, 80, 0.5);
+    transition: background-color 0.25s linear;
+    font-weight: normal;
+    font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+}
+
+.is-disabled
+{
+
+}
+textarea:focus, input:focus{
+    outline: none;
+
+}
+input
+{
+    color: black;
+    padding: 0;
+    border: 0;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    font-size: 28px !important;
+    background-color: transparent;
+    transition: background-color 0.25s linear;
+    outline: none;
+    vertical-align: middle;
+}
+
+#cell-0,  #cell-1,  #cell-2  { border-top:    2px solid black !important; }
+#cell-2,  #cell-11, #cell-20 { border-right:  2px solid black !important; }
+#cell-18, #cell-19, #cell-20 { border-bottom: 2px solid black !important; }
+#cell-0,  #cell-9,  #cell-18 { border-left:   2px solid black !important; }
+
+#cell-3,  #cell-4,  #cell-5  { border-top:    2px solid black !important; }
+#cell-5,  #cell-14, #cell-23 { border-right:  2px solid black !important; }
+#cell-21, #cell-22, #cell-23 { border-bottom: 2px solid black !important; }
+#cell-3,  #cell-12, #cell-21 { border-left:   2px solid black !important; }
+
+#cell-6,  #cell-7,  #cell-8  { border-top:    2px solid black !important; }
+#cell-8,  #cell-17, #cell-26 { border-right:  2px solid black !important; }
+#cell-24, #cell-25, #cell-26 { border-bottom: 2px solid black !important; }
+#cell-6,  #cell-15, #cell-24 { border-left:   2px solid black !important; }
+
+#cell-27, #cell-28, #cell-29 { border-top:    2px solid black !important; }
+#cell-29, #cell-38, #cell-47 { border-right:  2px solid black !important; }
+#cell-45, #cell-46, #cell-47 { border-bottom: 2px solid black !important; }
+#cell-27, #cell-36, #cell-45 { border-left:   2px solid black !important; }
+
+#cell-30, #cell-31, #cell-32 { border-top:    2px solid black !important; }
+#cell-32, #cell-41, #cell-50 { border-right:  2px solid black !important; }
+#cell-48, #cell-49, #cell-50 { border-bottom: 2px solid black !important; }
+#cell-30, #cell-39, #cell-48 { border-left:   2px solid black !important; }
+
+#cell-33, #cell-34, #cell-35 { border-top:    2px solid black !important; }
+#cell-35, #cell-44, #cell-53 { border-right:  2px solid black !important; }
+#cell-51, #cell-52, #cell-53 { border-bottom: 2px solid black !important; }
+#cell-33, #cell-42, #cell-51 { border-left:   2px solid black !important; }
+
+#cell-54, #cell-55, #cell-56 { border-top:    2px solid black !important; }
+#cell-56, #cell-65, #cell-74 { border-right:  2px solid black !important; }
+#cell-72, #cell-73, #cell-74 { border-bottom: 2px solid black !important;  }
+#cell-54, #cell-63, #cell-72 { border-left:   2px solid black !important; }
+
+#cell-57, #cell-58, #cell-59 { border-top:    2px solid black !important; }
+#cell-59, #cell-68, #cell-77 { border-right:  2px solid black !important; }
+#cell-75, #cell-76, #cell-77 { border-bottom: 2px solid black !important; }
+#cell-57, #cell-66, #cell-75 { border-left:   2px solid black !important;  }
+
+#cell-60, #cell-61, #cell-62 { border-top:    2px solid black !important; }
+#cell-62, #cell-71, #cell-80 { border-right:  2px solid black !important; }
+#cell-78, #cell-79, #cell-80 { border-bottom: 2px solid black !important; }
+#cell-60, #cell-69, #cell-78 { border-left:   2px solid black !important; }
+
+
+button:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+button:disabled {
+    transition-delay: 0.25s;
+    opacity: 0.6;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: scale(1.02);
+}
+
+.button {
+    min-width: 154px;
+    background-color: #4cacaf;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+    margin-left: 50px;
+    cursor: pointer;
+    transition-duration: 0.25s;
+    outline: none !important;
+}
+

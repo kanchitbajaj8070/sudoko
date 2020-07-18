@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+@import url( "https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic");
+@import url("https://fonts.googleapis.com/css?family=Cabin:700");
+.font-plex
+{
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.font-libre
+{
+    font-family: 'Libre Baskerville', serif;
+}
+.font-mont {
+    font-size: 1.2em;
+    line-height: 3rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+.font-cinzel
+{
+    font-family: 'Cinzel', serif;
+}
+.font-roboto
+{
+    font-family: 'Roboto Mono', monospace;
+}
+.font-merri
+{
+    font-family: 'Merriweather', serif;
+}
+
+.vertical-line
+{
+    border-right: 2px solid #b993d6;
+    padding-right: 2px;
+}
+.border-all
+{
+
+    border: 2px solid rgba(0,0,0,.7);
+    border-radius: 10px;
+}
+.border-no
+{
+
+    border: 2px solid;
+    padding: 3px;
+    border-radius: 10px;
+}
+.hr-line
+{
+    border-top: 2px solid #b993d6;
+}
+.top-gap
+{
+    padding-top: 70px;
+}
+.font-crimson
+{
+    font-family: 'Crimson Text', serif;
+}
+.text-size
+{
+    font-size: 1.2em;
+}
+.main-back
+{padding-top: 20px;
+    background: linear-gradient(to bottom,#654a86,#534292) fixed bottom;
+    background-color: #534292;
+    min-height: 100vh;
+}
+.main-button
+{
+    padding: 5px;
+    background: linear-gradient(to bottom,#654a86,#534292);
+    border-radius: 10px;
+    border-style: solid;
+    border-color: white;
+    margin: 5px !important;
+
+}
+.main-button:hover
+{
+    padding: 5px;
+    background: linear-gradient(to top,#654a86,#534292);
+    border-radius: 5px;
+    border-style: solid;
+    border-color: white;
+    margin: 5px !important;
+}
+
+.font-lora
+{
+    font-family: Lora,Serif;
+}
+.font-cabin
+{
+    font-family: cabin,Serif;
+}
+.comment-item
+{
+    border-bottom: 2px solid rgba(0,0,2,0.5);
+    transition: transform .5s;
+}
+.comment-item:hover
+{
+    transform: scale(1.02);
+}
+.comment-image
+{
+
+    margin-top: 10px !important;
+}
+.overflow-container
+{
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+}
+.header-image{
+    border: 1px solid rgba(255,255,255,0.8);
+}
+.button-bar-bottom
+{
+    margin-top: 40px !important;
+    justify-content: center !important;
+}

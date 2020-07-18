@@ -1,7 +1,15 @@
 .App {
   text-align: center;
+  background-color: #d3d3d3 !important;
+  padding-top: 20px;
 }
-
+.grid{
+  margin-top: 50px !important;
+}
+.main-back
+{padding-top: 20px;
+  min-height: 100vh;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
