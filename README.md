@@ -1,1 +1,1 @@
-The project is lie at ;- https://sudokosolverbacktracking.herokuapp.com/
+The project is live at- https://sudokosolverbacktracking.herokuapp.com/
